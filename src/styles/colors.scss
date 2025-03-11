@@ -1,0 +1,72 @@
+$main: #6941C6;
+$secondary: #667085;
+$support1: #101828;
+$support2: #F9F5FF;
+$purple: #42307D;
+$white: #fff;
+
+
+// START === Background Color
+.bg-Inherit {
+  background-color: inherit;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-main {
+  background-color: $main !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-support1 {
+  background-color: $support1 !important;
+}
+
+.bg-support2 {
+  background-color: $support2 !important;
+}
+
+.bg-purple {
+  background-color: $purple !important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+// END === Background Color
+
+// START === Text Color
+.text-main {
+  color: $main !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-support1 {
+  color: $support1 !important;
+}
+
+.text-support2 {
+  color: $support2 !important;
+}
+
+.text-purple {
+  color: $purple !important;
+}
+
+.text-white {
+  color: $white !important;
+}
+
+
+// END === Text Color
+
+

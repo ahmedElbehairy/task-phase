@@ -1,0 +1,14 @@
+.card-S-img{
+    width: 336px;
+    height: 240px;
+    @media (max-width:576px) {
+        width: 295px;
+        height: 200px;
+    }
+}
+.card-S {
+    width: 384px;
+    @media (max-width: 576px) {
+        width: 343px;
+    }
+}

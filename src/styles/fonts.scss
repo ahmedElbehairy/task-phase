@@ -1,0 +1,77 @@
+// Start Font-Face
+@font-face {
+  font-family: Outfit-SemiBold;
+  src: url("../assets/font/Outfit-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Bold;
+  src: url("../assets/font/Outfit-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Medium;
+  src: url("../assets/font/Outfit-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Outfit-Regular;
+  src: url("../assets/font/Outfit-Regular.ttf");
+  font-display: swap;
+}
+
+
+
+
+// Bold
+.font-Bold-s20 {
+  font-size: 20px !important;
+  font-family: Outfit-Bold;
+}
+
+//  SemiBold
+.font-SemiBold-s14 {
+  font-size: 14px !important;
+  font-family: Outfit-SemiBold;
+}
+.font-SemiBold-s24 {
+  font-size: 24px !important;
+  font-family: Outfit-SemiBold;
+  @media (max-width: 576px) {
+  font-size: 20px !important;
+  }
+}
+.font-SemiBold-s48 {
+  font-size: 48px !important;
+  font-family: Outfit-SemiBold;
+  @media (max-width: 576px) {
+    font-size: 36px !important;
+    }
+}
+
+// Medium
+.font-Medium-s14 {
+  font-size: 14px !important;
+  font-family: Outfit-Medium;
+}
+.font-Medium-s16 {
+  font-size: 16px !important;
+  font-family: Outfit-Medium;
+}
+// Regular
+.font-Regular-s14 {
+  font-size: 14px !important;
+  font-family: Outfit-Regular;
+}
+.font-Regular-s16 {
+  font-size: 16px !important;
+  font-family: Outfit-Regular;
+}
+.font-Regular-s20 {
+  font-size: 20px !important;
+  font-family: Outfit-Regular;
+}
+

@@ -1,0 +1,39 @@
+<div
+  class="justify-content-center bg-support2 position-relative p-5"
+>
+  <div class="m-lg-5 d-flex flex-column align-items-center gap-3">
+    <p
+      class="m-0 p-1 px-2 border-F-radius-s16 d-none d-lg-block font-Medium-s14 bg-support2 text-main"
+    >
+      Our blog
+    </p>
+    <p
+      class="m-0 p-1 px-2 border-F-radius-s16 d-lg-none font-Medium-s14 bg-support2 text-main"
+    >
+        Pricing plans
+    </p>
+    <p class="m-0 font-SemiBold-s48 text-purple text-center">
+      Resources and insights
+    </p>
+    <p class="m-0 font-Regular-s20 mt-1 text-main text-center">
+      The latest industry news, interviews, technologies, and resources.
+    </p>
+    <div
+      class="mt-4 border-F-radius-s8 border-gray-s1 bg-white d-flex align-items-center gap-2 px-3 p-2"
+    >
+      <i class="d-flex icon-search iC-S20 img-Background-Cover"></i>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        ngModel
+        placeholder="Search"
+        class="border-0 bg-transparent font-Regular-s16 text-main"
+        (keypress)="searchInput($event.target)"
+      />
+    </div>
+  </div>
+</div>
+<i
+  class="d-flex bg-size icon-bg-home img-Background-Cover position-absolute end-0 start-0"
+></i>

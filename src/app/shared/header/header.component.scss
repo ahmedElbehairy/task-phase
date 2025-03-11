@@ -1,0 +1,9 @@
+.bg-size{
+    height: 405px;
+    width: 100%;
+    top: 42%;
+    @media (max-width: 576px) {
+        height: 177px;
+        top: 55%;
+    }
+}

@@ -1,0 +1,38 @@
+<div class="row bg-Inherit justify-content-lg-between justify-content-center p-4" 
+*ngIf="lodding">
+    <div class="col-lg-4 mb-5 divShadow bg-white p-4 position-relative z-10 card-S"
+    *ngFor="let card of data()">
+        <img [src]="card.cover_image" loading="lazy" [alt]="card.title" class="card-S-img mb-4 img-Background-Cover">
+        <div class="d-flex flex-column gap-s12 justify-content-center">
+            <p class="m-0 text-main font-SemiBold-s14">{{card.type_of}}</p>
+            <p class="m-0 text-break d-flex align-items-center gap-3 justify-content-between">
+                <span class="text-support1 text-nowrap overflow-hidden font-SemiBold-s24">{{card.title}}</span>
+                <i class="d-flex icon-arrow-up-right  iC-S24 img-Background-Cover"></i>
+            </p>
+            <p class="m-0 text-secondary font-Regular-s16">{{card.description}}</p>
+        </div>
+        <div class="mt-5 d-flex gap-s12 align-items-center">
+            <img [src]="card.user.profile_image" loading="lazy" [alt]="card.user.name" class="iC-S40 rounded-circle img-Background-Cover">
+            <p class="m-0 d-flex flex-column">
+                <span class="text-support1 font-Medium-s14">{{card.user.name}}</span>
+                <span class="text-secondary font-Regular-s14 ">{{card.created_at | date}}</span>
+            </p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center my-4">
+        <!-- *ngIf="numberOfCards == 9" -->
+        <button class="border-0 border-F-radius-s8 bg-support2 text-main font-Medium-s16 p-3 px-4 gap-2 d-flex align-items-center" 
+        *ngIf="numberOfCards <= 9 || numberOfCards != 30"
+        (click)="showMore()">
+            <i class="d-flex icon-arrow-down iC-S20 img-Background-Cover"></i>
+            Load more
+        </button>
+        <!-- *ngIf="numberOfCards == 30" -->
+        <button class="border-0 border-F-radius-s8 bg-support2 text-main font-Medium-s16 p-3 px-4 gap-2 d-flex align-items-center" 
+        *ngIf="numberOfCards == 30"
+        (click)="showLess()">
+            <i class="d-flex icon-arrow-down iC-S20 img-Background-Cover"></i>
+            Load Less
+        </button>
+    </div>
+</div>
